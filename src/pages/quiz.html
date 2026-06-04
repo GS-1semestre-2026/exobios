@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/quiz.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="../assets/imgs/lua-icon.svg" type="image/png">
+    <title>EXOBIOS</title>
+</head>
+<body>
+    <section class="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </section>
+    <header>
+        <div class="menu-container">
+            <a href="../../index.html" class="exobios-home">EXOBIOS</a>
+            <div class="menu-opcoes">
+                <a href="#problema" class="menu-opcoes-link">VOLTAR AO INICIO</a>
+            </div>
+            <a href="./quiz.html" class="quiz-home">QUIZ</a>
+        </div>
+    </header>
+
+
+    <main>
+        <section id="inicio-quiz">
+            <h1 class="quiz-titulo">SEJA BEM VINDO AO QUIZ ESPACIAL!</h1>
+            <p class="quiz-subtitulo">O EXOBIOS possibilita o cultivo de alimentos fora da Terra.</p>
+            <p class="quiz-subtitulo">Responda as perguntas e descubra o quanto você sabe sobre o cultivo espacial!</p>
+        </section>
+        
+
+        <section id="quiz-container">
+            <div id="conteudo-quiz">
+                <span class="numero"></span>
+                <p class="pergunta"></p>
+                <div class="respostas"></div>
+            </div>
+
+            <div id="resultado-quiz">
+                <h2 class="resultado-titulo"></h2>
+                <p class="resultado-subtitulo"></p>
+                <button id="btn-reiniciar-quiz">Reiniciar Quiz</button>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer-exobios">
+        <div class="footer-topo">
+            <div class="footer-linha"></div>
+            <h2 class="footer-logo">EXOBIOS</h2>
+            <p class="footer-slogan">
+                Cultivando o futuro da vida além da Terra.
+            </p>
+        </div>
+        <div class="footer-conteudo">
+            <div class="footer-coluna">
+                <h3>Equipe</h3>
+                <p>Amanda Silva da Mata</p>
+                <p>Beatriz Mantovani da Cruz</p>
+                <p>Felipi Bandeira de Godoy</p>
+                <p>Gustavo Ducatti Bugelli</p>
+                <p>Laura Sampaio Neves</p>
+            </div>
+            <div class="footer-coluna">
+                <h3>Projeto</h3>
+                <p>Global Solution 2026</p>
+            </div>
+            <div class="footer-coluna">
+                <h3>Missão</h3>
+                <p>
+                    Desenvolver uma estufa inteligente capaz de auxiliar
+                    futuras missões espaciais na produção sustentável de alimentos.
+                </p>
+            </div>
+        </div>
+        <div class="footer-base">
+            <div class="footer-planetas">
+                <i class="fa-solid fa-seedling"></i>
+                <i class="fa-solid fa-microchip"></i>
+                <i class="fa-solid fa-satellite"></i>
+                <i class="fa-solid fa-rocket"></i>
+            </div>
+            <p>
+                © 2026 EXOBIOS • Projeto acadêmico FIAP
+            </p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js" type="module"></script>
+</body>
+</html>
