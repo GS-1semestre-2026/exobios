@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/quiz.css">
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/slider.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -35,8 +36,23 @@
 
     <main>
         <section id="inicio-quiz">
-            <h1 class="quiz-titulo">SEJA BEM VINDO AO QUIZ ESPACIAL!</h1>
-            <p class="quiz-subtitulo">Responda as perguntas e descubra o quanto você sabe sobre o cultivo espacial!</p>
+
+            <div class="carrossel">
+
+                <div class="texto">
+                    <h1 class="quiz-titulo">SEJA BEM VINDO AO QUIZ ESPACIAL!</h1>
+                    <p class="quiz-subtitulo">Responda as perguntas e descubra o quanto você sabe sobre o cultivo espacial!</p>
+
+                    <a href="#quiz-container" class="seta">
+                        <img src="../assets/imgs/seta-para-baixo.png" alt="Seta para baixo">
+                    </a>
+
+                </div>
+
+                <img id="slide" class="slide" src="../assets/imgs/img1.jpg" alt="">
+            </div>
+
+
         </section>
         
 
@@ -99,5 +115,6 @@
     </footer>
 
     <script src="../js/script.js" type="module"></script>
+    <script src="../js/slider.js"></script>
 </body>
 </html>
