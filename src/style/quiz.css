@@ -25,8 +25,8 @@
     align-items: center;
     gap: 20px;
     justify-content: center;
-    background-color: #ff0000;
     height: 70vh;
+    margin-bottom: 50px;
 }
 
 #conteudo-quiz, #resultado-quiz {
@@ -41,6 +41,22 @@
     height: 100%;
 }
 
+.numero {
+    font-size: 22px;
+    color: #B9C1CC;
+    margin-bottom: 10px;
+    text-align: right;
+    width: 90%;
+}
+
+.pergunta {
+    font-size: 28px;
+    color: #000;
+    text-align: center;
+    margin: 30px;
+}
+
 #resultado-quiz {
     display: none;
 }
+
