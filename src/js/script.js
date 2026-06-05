@@ -52,15 +52,15 @@ function carregarPergunta() {
 function fim() {
 
     if (acertos === perguntas.length) {
-        resultadoTitulo.innerHTML = `Parabéns! Você acertou todas as perguntas!`;
+        resultadoTitulo.innerHTML = `Parabéns! Você acertou <b>todas</b> as perguntas!`;
         resultadoSubtitulo.innerHTML = `Você realmente é especialista em agricultura espacial!`;
 
     }else if (acertos >= perguntas.length / 2) {
-        resultadoTitulo.innerHTML = `Parabéns! Você acertou ${acertos} de ${perguntas.length} perguntas!`;
+        resultadoTitulo.innerHTML = `Parabéns! Você acertou <b>${acertos} de ${perguntas.length}</b> perguntas!`;
         resultadoSubtitulo.innerHTML = `Mais um pouquinho e você será um especialista!`;
 
     }else {
-        resultadoTitulo.innerHTML = `Você acertou ${acertos} de ${perguntas.length} perguntas.`;
+        resultadoTitulo.innerHTML = `Você acertou <b>${acertos} de ${perguntas.length}</b> perguntas.`;
         resultadoSubtitulo.innerHTML = `Não desanime, o importante é aprender e se divertir!`;
     }
     
