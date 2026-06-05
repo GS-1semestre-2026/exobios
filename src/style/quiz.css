@@ -25,8 +25,9 @@
     align-items: center;
     gap: 20px;
     justify-content: center;
-    background-color: #ff0000;
-    height: 70vh;
+    height: 90vh;
+    margin-bottom: 30px;
+    
 }
 
 #conteudo-quiz, #resultado-quiz {
@@ -39,8 +40,55 @@
     border-radius: 30px;
     width: 50%;
     height: 100%;
+    border: 10px solid transparent;
+    background:
+        linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(90deg, #00d4ff, #7b2cff) border-box;
 }
+
+
+
+/* QUIZ */
+
+.numero{
+    text-align: right;
+    width: 80%;
+    font-size: 20px;
+    height: 10%;
+    /* background-color: rgb(0, 247, 66); */
+}
+
+.pergunta {
+    font-size: 26px;
+    text-align: center;
+    color: #000;
+    font-weight: 600;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.44);
+    padding: 30px;
+    height: 25%;
+    /* background-color: rgb(130, 55, 34); */
+    margin-bottom: 20px;
+}
+
+.respostas {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    gap: 20px;
+    /* background-color: rgb(0, 247, 66); */
+    width: 70%;
+    height: 65%;
+
+}
+
+.respostas button{
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+}
+
 
 #resultado-quiz {
     display: none;
 }
+
