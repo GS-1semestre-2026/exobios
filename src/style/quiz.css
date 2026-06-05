@@ -30,20 +30,55 @@
     
 }
 
-#conteudo-quiz, #resultado-quiz {
+#conteudo-quiz,
+#resultado-quiz {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
     justify-content: center;
-    background-color: #fff;
-    border-radius: 30px;
+
+    padding: 20px;
     width: 50%;
     height: 100%;
-    border: 10px solid transparent;
-    background:
-        linear-gradient(#fff, #fff) padding-box,
-        linear-gradient(90deg, #00d4ff, #7b2cff) border-box;
+
+    border-radius: 30px;
+    overflow: hidden;
+    background: #fff;
+}
+
+#conteudo-quiz::before,
+#resultado-quiz::before {
+    content: "";
+    position: absolute;
+    inset: -200%; /* para garantir que a borda seja visível mesmo durante a rotação */
+    background: conic-gradient(#020024, #242494, #00d5ff, #a2e8f6,  #00d5ff, #242494, #020024 );
+    animation: girar 12s linear infinite;
+}
+
+#conteudo-quiz::after,
+#resultado-quiz::after {
+    content: "";
+    position: absolute;
+    inset: 8px; /* espessura da borda */
+
+    background: #fff;
+    border-radius: 30px;
+}
+
+#conteudo-quiz > *,
+#resultado-quiz > * {
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 
@@ -53,6 +88,7 @@
 .numero{
     text-align: right;
     width: 80%;
+    padding: 5px;
     font-size: 20px;
     height: 10%;
     /* background-color: rgb(0, 247, 66); */
@@ -63,7 +99,7 @@
     text-align: center;
     color: #000;
     font-weight: 600;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.44);
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.44);
     padding: 30px;
     height: 25%;
     /* background-color: rgb(130, 55, 34); */
@@ -85,10 +121,46 @@
     width: 100%;
     padding: 10px;
     font-size: 20px;
+    background-color: #c6dfe4;
+    border-radius: 15px;
+    transition: 0.3s;
+    border: none;
 }
 
+.respostas button:hover{
+    background-color: #020024;
+    color: #fff;
+    
+}
+
+
+/* Resultado do quiz  */
 
 #resultado-quiz {
     display: none;
 }
 
+.resultado-titulo {
+    font-family: "Exo 2", sans-serif;
+    font-size: 45px;
+    color: #05005f;
+    text-align: center;
+}
+
+.resultado-subtitulo {
+    font-family: "Exo 2", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    color: #828282;
+}
+
+#btn-reiniciar-quiz {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #c6dfe4;
+    border-radius: 15px;
+    transition: 0.3s;
+    border: none;
+    margin-top: 20px;
+}
