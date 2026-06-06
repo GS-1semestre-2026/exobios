@@ -19,7 +19,7 @@ html{
 }
 
 body{
-    background-color: var(--fundo-body);
+    background: var(--fundo-body);
     color: var(--texto);
     font-family: "Exo 2", sans-serif;
 }

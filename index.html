@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style/style.css">
+    <link rel="stylesheet" href="src/style/fundo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -334,8 +335,17 @@
                 </div>
             </div>
         </section>
+
+        <section id="modo-fundo">
+            
+            <button class="cor cor1" onclick="trocar('#0A050C')"><img src="./src/assets/imgs/noite.png" alt="Icone lua"></button>
+            <button class="cor cor2" onclick="trocar('#006e9d')"><img src="./src/assets/imgs/sol.png" alt="Icone Sol"></button>
+            <button class="cor cor3" onclick="trocar('#3b1802')"><img src="./src/assets/imgs/marte-icon.png" alt="Icone Marte"></button>
+
+        </section>
+
     </main>
-        <footer class="footer-exobios">
+    <footer class="footer-exobios">
     <div class="footer-topo">
         <div class="footer-linha"></div>
         <h2 class="footer-logo">EXOBIOS</h2>
@@ -376,5 +386,7 @@
         </p>
     </div>
     </footer>
+
+    <script src="./src/js/fundo.js"></script>
 </body>
 </html>
