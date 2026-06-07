@@ -1,0 +1,10 @@
+Equipe Exobios
+
+Amanda Silva da Mata - 572585 
+Beatriz Mantovani da Cruz - 573824 
+Felipi Godoy - 573741 
+Gustavo Ducatti Bugelli - 570932 
+Laura Sampaio Neves - 570802 
+
+Repositório GitHub: https://github.com/GS-1semestre-2026/exobios
+Site no Github pages: https://gs-1semestre-2026.github.io/exobios/
