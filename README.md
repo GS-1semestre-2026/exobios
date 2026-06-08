@@ -4,7 +4,7 @@
 
 * Amanda Silva da Mata - RM 572585
 * Beatriz Mantovani da Cruz - RM 573824
-* Felipi Godoy - RM 573741
+* Felipi Bandeira de Godoy - RM 573741
 * Gustavo Ducatti Bugelli - RM 570932
 * Laura Sampaio Neves - RM 570802
 
